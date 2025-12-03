@@ -1,9 +1,6 @@
-from app.predict import predict
+from ASI_Task_1.app.predict import predict
 
-def test_predict_valid_input():
-    # Example measurements of an iris flower
+def test_predict_valid():
     features = [5.1, 3.5, 1.4, 0.2]
-
     result = predict(features)
-
     assert result in ["Setosa", "Versicolor", "Virginica"]
