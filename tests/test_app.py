@@ -1,4 +1,4 @@
-from ASI_Task_1.app.predict import predict
+from app.predict import predict
 
 def test_predict_valid():
     features = [5.1, 3.5, 1.4, 0.2]
