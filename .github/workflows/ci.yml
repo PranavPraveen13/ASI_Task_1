@@ -36,7 +36,10 @@ jobs:
           password: ${{ secrets.GHCR_PAT }}
 
       - name: Build Docker Image
-        run: docker build -t ghcr.io/${{ secrets.GHCR_USERNAME }}/iris-streamlit:latest .
+        run: docker build -t ghcr.io/pranavpraveen13/iris-streamlit:latest .
+
+
 
       - name: Push Docker Image
-        run: docker push ghcr.io/${{ secrets.GHCR_USERNAME }}/iris-streamlit:latest
+        run: docker push ghcr.io/pranavpraveen13/iris-streamlit:latest
+
